@@ -8,7 +8,7 @@
     "start:android": "npm run rn-cli -- run-android",
     "start:windows": "npm run rn-cli -- run-windows",
     "start:ios": "npm run rn-cli -- run-ios",
-    "start:web": "cross-env platform=web webpack-dev-server --config=web/webpack/dev.js --progress --colors --mode=development",
+    "start:web": "cross-env platform=web webpack-dev-server --config=web/webpack/dev.js --progress --colors --mode=development --host 0.0.0.0 --disable-host-check",
     "start:rn-dev-server": "npm run rn-cli -- start --reset-cache",
     "build:web": "cross-env platform=web webpack --config=web/webpack/prod.js --progress --colors --mode=production",
     "lint": "eslint -c .eslintrc src/**/*"
@@ -27,10 +27,9 @@
     "eslint-plugin-react": "7.13.0",
     "html-webpack-plugin": "3.2.0",
     "metro-react-native-babel-preset": "0.54.1",
-    "redux-devtools": "^3.5.0",
-    "redux-devtools-extension": "^2.13.8",
     "rnpm-plugin-windows": "0.2.9",
     "webpack": "4.31.0",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "3.3.2",
     "webpack-dev-server": "3.4.1",
     "webpack-merge": "4.2.1"
@@ -38,15 +37,10 @@
   "dependencies": {
     "animated": "^0.2.2",
     "fsevents": "^2.0.7",
-    "lottie-web": "^5.5.4",
-    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-interactable": "^0.6.4",
     "react-native": "^0.59.8",
     "react-panresponder-web": "^1.0.2",
-    "react-redux": "^7.0.3",
-    "reactxp": "^1.6.1",
-    "redux": "^4.0.1"
+    "reactxp": "^1.6.1"
   }
 }
