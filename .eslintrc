@@ -1,0 +1,29 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/jsx-curly-brace-presence": [2, { "props": "always" }],
+    "max-len": ["error", 140],
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "react/prop-types" : "off"
+  },
+  "globals": {
+    "__DEV__": true
+  },
+  "settings": {
+    "react": { "version": "latest" }
+  },
+}

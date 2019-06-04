@@ -1,0 +1,52 @@
+{
+  "name": "rxp_test",
+  "private": true,
+  "main": "index.js",
+  "version": "0.0.1",
+  "scripts": {
+    "rn-cli": "node scripts/react-native.js",
+    "start:android": "npm run rn-cli -- run-android",
+    "start:windows": "npm run rn-cli -- run-windows",
+    "start:ios": "npm run rn-cli -- run-ios",
+    "start:web": "cross-env platform=web webpack-dev-server --config=web/webpack/dev.js --progress --colors --mode=development",
+    "start:rn-dev-server": "npm run rn-cli -- start --reset-cache",
+    "build:web": "cross-env platform=web webpack --config=web/webpack/prod.js --progress --colors --mode=production",
+    "lint": "eslint -c .eslintrc src/**/*"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.4",
+    "@babel/plugin-proposal-decorators": "7.4.4",
+    "@babel/preset-env": "7.4.4",
+    "@react-native-community/cli": "^1.9.7",
+    "babel-eslint": "10.0.1",
+    "babel-loader": "8.0.6",
+    "compression-webpack-plugin": "2.0.0",
+    "cross-env": "5.2.0",
+    "eslint": "5.16.0",
+    "eslint-loader": "2.1.2",
+    "eslint-plugin-react": "7.13.0",
+    "html-webpack-plugin": "3.2.0",
+    "metro-react-native-babel-preset": "0.54.1",
+    "redux-devtools": "^3.5.0",
+    "redux-devtools-extension": "^2.13.8",
+    "rnpm-plugin-windows": "0.2.9",
+    "webpack": "4.31.0",
+    "webpack-cli": "3.3.2",
+    "webpack-dev-server": "3.4.1",
+    "webpack-merge": "4.2.1"
+  },
+  "dependencies": {
+    "animated": "^0.2.2",
+    "fsevents": "^2.0.7",
+    "lottie-web": "^5.5.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-interactable": "^0.6.4",
+    "react-native": "^0.59.8",
+    "react-panresponder-web": "^1.0.2",
+    "react-redux": "^7.0.3",
+    "reactxp": "^1.6.1",
+    "redux": "^4.0.1"
+  }
+}
