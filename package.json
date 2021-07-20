@@ -39,7 +39,7 @@
     "fsevents": "^2.0.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-native": "^0.59.8",
+    "react-native": "^0.62.3",
     "react-panresponder-web": "^1.0.2",
     "reactxp": "^1.6.1"
   }
